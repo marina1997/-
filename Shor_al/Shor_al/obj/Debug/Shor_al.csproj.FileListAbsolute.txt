@@ -1,0 +1,9 @@
+D:\4 curs\ВКР\попытка\Алгоритм Шора\Shor_al\Shor_al\bin\Debug\Shor_al.exe.config
+D:\4 curs\ВКР\попытка\Алгоритм Шора\Shor_al\Shor_al\bin\Debug\Shor_al.exe
+D:\4 curs\ВКР\попытка\Алгоритм Шора\Shor_al\Shor_al\bin\Debug\Shor_al.pdb
+D:\4 curs\ВКР\попытка\Алгоритм Шора\Shor_al\Shor_al\bin\Debug\MathNet.Numerics.dll
+D:\4 curs\ВКР\попытка\Алгоритм Шора\Shor_al\Shor_al\bin\Debug\QuantumComputing.dll
+D:\4 curs\ВКР\попытка\Алгоритм Шора\Shor_al\Shor_al\bin\Debug\MathNet.Numerics.xml
+D:\4 curs\ВКР\попытка\Алгоритм Шора\Shor_al\Shor_al\obj\Debug\Shor_al.csprojResolveAssemblyReference.cache
+D:\4 curs\ВКР\попытка\Алгоритм Шора\Shor_al\Shor_al\obj\Debug\Shor_al.exe
+D:\4 curs\ВКР\попытка\Алгоритм Шора\Shor_al\Shor_al\obj\Debug\Shor_al.pdb
