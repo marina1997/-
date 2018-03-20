@@ -1,0 +1,12 @@
+D:\4 curs\ВКР\попытка\de\de\bin\Debug\de.exe.config
+D:\4 curs\ВКР\попытка\de\de\bin\Debug\de.exe
+D:\4 curs\ВКР\попытка\de\de\bin\Debug\de.pdb
+D:\4 curs\ВКР\попытка\de\de\bin\Debug\MathNet.Numerics.dll
+D:\4 curs\ВКР\попытка\de\de\bin\Debug\QuantumComputing.dll
+D:\4 curs\ВКР\попытка\de\de\bin\Debug\MathNet.Numerics.xml
+D:\4 curs\ВКР\попытка\de\de\obj\Debug\de.csprojResolveAssemblyReference.cache
+D:\4 curs\ВКР\попытка\de\de\obj\Debug\de.exe
+D:\4 curs\ВКР\попытка\de\de\obj\Debug\de.pdb
+D:\4 curs\ВКР\попытка\Алгоритм Дойча\de\de\bin\Debug\de.exe.config
+D:\4 curs\ВКР\попытка\Алгоритм Дойча\de\de\obj\Debug\de.exe
+D:\4 curs\ВКР\попытка\Алгоритм Дойча\de\de\obj\Debug\de.pdb
