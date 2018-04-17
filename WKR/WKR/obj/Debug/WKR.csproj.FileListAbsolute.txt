@@ -1,0 +1,14 @@
+D:\4 curs\ВКР\попытка\WKR\WKR\bin\Debug\WKR.exe.config
+D:\4 curs\ВКР\попытка\WKR\WKR\bin\Debug\WKR.exe
+D:\4 curs\ВКР\попытка\WKR\WKR\bin\Debug\WKR.pdb
+D:\4 curs\ВКР\попытка\WKR\WKR\obj\Debug\WKR.csprojResolveAssemblyReference.cache
+D:\4 curs\ВКР\попытка\WKR\WKR\obj\Debug\WKR.main.resources
+D:\4 curs\ВКР\попытка\WKR\WKR\obj\Debug\WKR.Properties.Resources.resources
+D:\4 curs\ВКР\попытка\WKR\WKR\obj\Debug\WKR.csproj.GenerateResource.Cache
+D:\4 curs\ВКР\попытка\WKR\WKR\obj\Debug\WKR.exe
+D:\4 curs\ВКР\попытка\WKR\WKR\obj\Debug\WKR.pdb
+D:\4 curs\ВКР\попытка\WKR\WKR\obj\Debug\WKR.algorithm_deutsch.resources
+D:\4 curs\ВКР\попытка\WKR\WKR\bin\Debug\MathNet.Numerics.dll
+D:\4 curs\ВКР\попытка\WKR\WKR\bin\Debug\QuantumComputing.dll
+D:\4 curs\ВКР\попытка\WKR\WKR\bin\Debug\MathNet.Numerics.xml
+D:\4 curs\ВКР\попытка\WKR\WKR\obj\Debug\WKR.algorithm_grover.resources
