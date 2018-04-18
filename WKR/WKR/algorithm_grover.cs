@@ -29,51 +29,58 @@ namespace WKR
 
         private void f_1_Click(object sender, EventArgs e)           
         {
-            int sum, k=1;
-            //String [] all_answer = { "000", "001", "010", "011", "100", "101", "110", "111" };
-            //String[] answer_mas=new String[20];
-            List<string> answer_mas = new List<string>();
+            
+            List<string> answer_mas = new List<string>();                                                // Хранятся все ответы
             string answer;
+            int N;                                                                                       // Сколько раз будет выполняться вся программа
+            int numberIterations;                                                                        // Сколько раз будет выполняться итерация Гровера
+            N = Convert.ToInt32(textBox1.Text);                                                          // Ввод количества выполнений алгоритма Гровера
+            numberIterations = Convert.ToInt32(textBox2.Text);    
 
-            for (int count = 0; count < 5; count++)
+            for (int count = 0; count < N; count++)                                                      // Вызов алгоритма Гровера N раз
             {
                 Grover grover = new Grover(new Random());
-                answer = grover.Run();
+                answer = grover.Run(numberIterations);
                 answer_mas.Add(answer);
-                //answer_mas[count] = answer;
-                //label1.Text = answer;
             }
-            for (int count = 0; count < answer_mas.Count; count++)
+            plotting(answer_mas);
+            
+        }
+
+        private void plotting(List<string> answer_mas)
+        {
+            int sum;
+            String[] answer_all = { "000", "001", "010", "011", "100", "101", "110", "111" };              // Все возможные ответы. Для построения графика
+           
+            chart1.Series[0].Points.Clear();                                                              // Очищение графика      
+            for (int count = 0; count < answer_all.Length; count++)                                       // Построение Графика
             {
                 sum = 0;
-                for (int j = k; j <= answer_mas.Count; j++)
+                for (int i = 0; i < answer_mas.Count; i++)
                 {
-                    if (answer_mas.ElementAt<string>(count) == answer_mas.ElementAt<string>(j-1))
-                    {
-                        sum++;
-                        if (answer_mas.Count == j)
-                        {
-                            answer_mas.RemoveAt(j - 1);
-                            j--;
-                        }
-                        if (j - 1 != 0)
-                        {
-                            answer_mas.RemoveAt(j);
-                            j--;
-                        }
-                        
-                    }
+                    if (answer_all[count] == answer_mas[i]) sum++;
                 }
-                if (sum == 0) continue;
-                chart1.Series[0].Points.AddXY(answer_mas.ElementAt<string>(count), sum);
-                k++;
-
-
+                chart1.Series[0].Points.AddXY(answer_all[count], sum);
             }
+            chart1.ChartAreas[0].AxisX.MajorGrid.Enabled = false;                                          // Убирется сетка у графика
+            chart1.ChartAreas[0].AxisY.MajorGrid.Enabled = false;                     
 
-            //chart1.Series[0].Points.AddXY(all_answer,answer_mas[count]);
+        }
 
+        private void label3_Click(object sender, EventArgs e)                                             
+        {
             
+        }
+
+        private void button1_Click(object sender, EventArgs e)                                             // Очистить textBox 1 and 2
+        {
+            textBox1.Clear();
+            textBox2.Clear();
+        }
+
+        private void exit_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 
@@ -86,7 +93,7 @@ namespace WKR
             this.Random = random;
         }
 
-        public string Run()
+        public string Run(int numberIterations)
         {
             int registerLength = 3;                                                                        // Кол-во кубитов.
             QuantumRegister fullRegister = new QuantumRegister(0, registerLength);                         // Полный регистр
@@ -97,7 +104,7 @@ namespace WKR
 
             Matrix<Complex> matrixPhaseInverse = PhaseInverse(registerLength);                             // Проектирование матрицы оператора диффузии (условные сдвиг фазы) 
             QuantumGate GatePhaseInverse = new QuantumGate(matrixPhaseInverse);                            // Гейт условного сдвига фазы
-            for (int count = 2; count > 0; count--)                                                        //Применение итерации Гровера. Третий шаг
+            for (int count = numberIterations; count > 0; count--)                                                        // Применение итерации Гровера. Третий шаг
             {
                 fullRegister = GateOracle * fullRegister;
                 //fullRegister = QuantumGate.HadamardGateOfLength(registerLength) * fullRegister;
@@ -107,7 +114,7 @@ namespace WKR
 
             fullRegister.Collapse(this.Random);                                                            // Измерение (наблюление). Четвертый шаг
             int RegisterValue = fullRegister.GetValue(0, registerLength);                                  // Измерение
-            string BinaryRegisterValue = Convert.ToString(RegisterValue, 2);                               // Перевод из 10 в 2 систему
+            string BinaryRegisterValue = HexToBin(RegisterValue, registerLength);                          // Перевод из 10 в 2 систему
             return (BinaryRegisterValue);
             ;
 
@@ -135,6 +142,23 @@ namespace WKR
                 matrixPhaseInverse.At(RowColumn, RowColumn, n);
             }
             return matrixPhaseInverse;
+        }
+
+
+        private string HexToBin(int a, int n)                                                                //Перевод из 10 в 2 систему и дополнение нулей. n количество кубитов
+        {
+            string original = Convert.ToString(a, 2);
+
+            if (original.Length < n)
+            {
+                int length = n - original.Length;
+                for (int count = 0; count < length; count++)
+                {
+                    original = original.Insert(0, "0");
+                }
+            }
+            return original;
+ 
         }
     }
 }
