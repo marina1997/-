@@ -12,3 +12,4 @@ D:\4 curs\ВКР\попытка\WKR\WKR\bin\Debug\MathNet.Numerics.dll
 D:\4 curs\ВКР\попытка\WKR\WKR\bin\Debug\QuantumComputing.dll
 D:\4 curs\ВКР\попытка\WKR\WKR\bin\Debug\MathNet.Numerics.xml
 D:\4 curs\ВКР\попытка\WKR\WKR\obj\Debug\WKR.algorithm_grover.resources
+D:\4 curs\ВКР\попытка\WKR\WKR\obj\Debug\WKR.algorithm_Shora.resources

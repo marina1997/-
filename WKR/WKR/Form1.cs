@@ -36,5 +36,12 @@ namespace WKR
         {
             Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            algorithm_Shora form_shora = new algorithm_Shora();
+            form_shora.Show();
+            Hide();
+        }
     }
 }

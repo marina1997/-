@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.back = new System.Windows.Forms.Button();
             this.f_1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -40,6 +40,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.f_3 = new System.Windows.Forms.Button();
+            this.f_2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -66,11 +68,11 @@
             // f_1
             // 
             this.f_1.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.f_1.Location = new System.Drawing.Point(12, 139);
+            this.f_1.Location = new System.Drawing.Point(12, 149);
             this.f_1.Name = "f_1";
-            this.f_1.Size = new System.Drawing.Size(219, 29);
+            this.f_1.Size = new System.Drawing.Size(250, 29);
             this.f_1.TabIndex = 1;
-            this.f_1.Text = "𝑓(X1, X2, X3) = X1 /\\ X2 /\\ X3";
+            this.f_1.Text = "F(X1, X2, X3) = X1 /\\ X2 /\\ X3";
             this.f_1.UseVisualStyleBackColor = true;
             this.f_1.Click += new System.EventHandler(this.f_1_Click);
             // 
@@ -88,31 +90,30 @@
             // 
             // chart1
             // 
-            this.chart1.BackColor = System.Drawing.SystemColors.Control;
             this.chart1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.chart1.BackImageTransparentColor = System.Drawing.Color.White;
             this.chart1.BackSecondaryColor = System.Drawing.Color.White;
             this.chart1.BorderSkin.BackColor = System.Drawing.Color.Black;
             this.chart1.BorderSkin.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.VerticalCenter;
             this.chart1.BorderSkin.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.DashedUpwardDiagonal;
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(30, 52);
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
+            this.chart1.Location = new System.Drawing.Point(29, 52);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
-            series1.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.LeftRight;
-            series1.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            series1.BorderColor = System.Drawing.Color.YellowGreen;
-            series1.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.NotSet;
-            series1.ChartArea = "ChartArea1";
-            series1.IsVisibleInLegend = false;
-            series1.Legend = "Legend1";
-            series1.MarkerBorderColor = System.Drawing.Color.White;
-            series1.MarkerBorderWidth = 2;
-            series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
+            series2.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.LeftRight;
+            series2.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            series2.BorderColor = System.Drawing.Color.YellowGreen;
+            series2.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.NotSet;
+            series2.ChartArea = "ChartArea1";
+            series2.IsVisibleInLegend = false;
+            series2.Legend = "Legend1";
+            series2.MarkerBorderColor = System.Drawing.Color.White;
+            series2.MarkerBorderWidth = 2;
+            series2.Name = "Series1";
+            this.chart1.Series.Add(series2);
             this.chart1.Size = new System.Drawing.Size(422, 278);
             this.chart1.TabIndex = 3;
             this.chart1.Text = "chart1";
@@ -153,6 +154,8 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.f_3);
+            this.panel2.Controls.Add(this.f_2);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.textBox1);
@@ -163,6 +166,28 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(401, 333);
             this.panel2.TabIndex = 7;
+            // 
+            // f_3
+            // 
+            this.f_3.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.f_3.Location = new System.Drawing.Point(12, 247);
+            this.f_3.Name = "f_3";
+            this.f_3.Size = new System.Drawing.Size(250, 29);
+            this.f_3.TabIndex = 9;
+            this.f_3.Text = "F(X1, X2, X3) = X1 <-> X2 <-> X3";
+            this.f_3.UseVisualStyleBackColor = true;
+            this.f_3.Click += new System.EventHandler(this.f_3_Click);
+            // 
+            // f_2
+            // 
+            this.f_2.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.f_2.Location = new System.Drawing.Point(12, 197);
+            this.f_2.Name = "f_2";
+            this.f_2.Size = new System.Drawing.Size(250, 29);
+            this.f_2.TabIndex = 8;
+            this.f_2.Text = "F(X1, X2, X3) = X1 V X2 V X3";
+            this.f_2.UseVisualStyleBackColor = true;
+            this.f_2.Click += new System.EventHandler(this.f_2_Click);
             // 
             // button1
             // 
@@ -272,5 +297,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button exit;
+        private System.Windows.Forms.Button f_2;
+        private System.Windows.Forms.Button f_3;
     }
 }

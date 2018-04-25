@@ -30,7 +30,7 @@
         {
             this.deutsch = new System.Windows.Forms.Button();
             this.algorithmGrover = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.algorithmShora = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -59,15 +59,16 @@
             this.algorithmGrover.UseVisualStyleBackColor = true;
             this.algorithmGrover.Click += new System.EventHandler(this.algorithmGrover_Click);
             // 
-            // button1
+            // algorithmShora
             // 
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.button1.Location = new System.Drawing.Point(168, 230);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(171, 28);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Алгоритм Шора";
-            this.button1.UseVisualStyleBackColor = true;
+            this.algorithmShora.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.algorithmShora.Location = new System.Drawing.Point(168, 230);
+            this.algorithmShora.Name = "algorithmShora";
+            this.algorithmShora.Size = new System.Drawing.Size(171, 28);
+            this.algorithmShora.TabIndex = 2;
+            this.algorithmShora.Text = "Алгоритм Шора";
+            this.algorithmShora.UseVisualStyleBackColor = true;
+            this.algorithmShora.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -98,7 +99,7 @@
             this.ClientSize = new System.Drawing.Size(541, 358);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.algorithmShora);
             this.Controls.Add(this.algorithmGrover);
             this.Controls.Add(this.deutsch);
             this.Name = "main";
@@ -112,7 +113,7 @@
 
         private System.Windows.Forms.Button deutsch;
         private System.Windows.Forms.Button algorithmGrover;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button algorithmShora;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
 
