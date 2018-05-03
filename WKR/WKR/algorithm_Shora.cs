@@ -28,7 +28,29 @@ namespace WKR
             numberToFactor = Convert.ToInt32(textBox1.Text);
             Shor shor = new Shor(new Random());
            // string a = string.Join(", ", shor.Run(numberToFactor));
-            label1.Text = string.Join(", ", shor.Run(numberToFactor)); ;
+            label1.Text = string.Join(", ", shor.Run(numberToFactor)); 
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            main main_form = new main();
+            main_form.Show();
+            Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 

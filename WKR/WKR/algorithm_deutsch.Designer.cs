@@ -35,13 +35,13 @@
             this.f_3 = new System.Windows.Forms.Button();
             this.f_2 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
             this.schema_pic = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.schema_pic)).BeginInit();
@@ -127,6 +127,16 @@
             this.panel2.Size = new System.Drawing.Size(366, 233);
             this.panel2.TabIndex = 2;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.label5.Location = new System.Drawing.Point(55, 194);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(51, 19);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "Схема";
+            // 
             // schema_pic
             // 
             this.schema_pic.Location = new System.Drawing.Point(55, 88);
@@ -186,16 +196,6 @@
     "ящике константой или сбалансированной. ";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label3.UseCompatibleTextRendering = true;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.label5.Location = new System.Drawing.Point(55, 194);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(51, 19);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "Схема";
             // 
             // algorithm_deutsch
             // 
