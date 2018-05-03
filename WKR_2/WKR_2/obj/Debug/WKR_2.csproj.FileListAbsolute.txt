@@ -1,0 +1,15 @@
+D:\4 curs\ВКР\попытка\WKR_2\WKR_2\bin\Debug\WKR_2.exe.config
+D:\4 curs\ВКР\попытка\WKR_2\WKR_2\bin\Debug\WKR_2.exe
+D:\4 curs\ВКР\попытка\WKR_2\WKR_2\bin\Debug\WKR_2.pdb
+D:\4 curs\ВКР\попытка\WKR_2\WKR_2\obj\Debug\WKR_2.csprojResolveAssemblyReference.cache
+D:\4 curs\ВКР\попытка\WKR_2\WKR_2\obj\Debug\WKR_2.algorithm_deutsch.resources
+D:\4 curs\ВКР\попытка\WKR_2\WKR_2\obj\Debug\WKR_2.Properties.Resources.resources
+D:\4 curs\ВКР\попытка\WKR_2\WKR_2\obj\Debug\WKR_2.csproj.GenerateResource.Cache
+D:\4 curs\ВКР\попытка\WKR_2\WKR_2\obj\Debug\WKR_2.exe
+D:\4 curs\ВКР\попытка\WKR_2\WKR_2\obj\Debug\WKR_2.pdb
+D:\4 curs\ВКР\попытка\WKR_2\WKR_2\bin\Debug\MathNet.Numerics.dll
+D:\4 curs\ВКР\попытка\WKR_2\WKR_2\bin\Debug\QuantumComputing.dll
+D:\4 curs\ВКР\попытка\WKR_2\WKR_2\bin\Debug\MathNet.Numerics.xml
+D:\4 curs\ВКР\попытка\WKR_2\WKR_2\obj\Debug\WKR_2.main.resources
+D:\4 curs\ВКР\попытка\WKR_2\WKR_2\obj\Debug\WKR_2.algorithm_grover.resources
+D:\4 curs\ВКР\попытка\WKR_2\WKR_2\obj\Debug\WKR_2.algorithm_Shora.resources
